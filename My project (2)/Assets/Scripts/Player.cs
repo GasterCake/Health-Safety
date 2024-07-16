@@ -10,8 +10,9 @@ public class Player : MonoBehaviour
     public float speed;
     private bool grounded;
     private float horizontalInput;
+    public GameObject manager;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
@@ -34,12 +35,23 @@ public class Player : MonoBehaviour
         //Debug.Log(grounded);
         anim.SetBool("Walking", horizontalInput != 0);
         anim.SetBool("Grounded", grounded);
+
+        if (transform.position.y < -10) {
+            manager.GetComponent<Manager>().Restart();
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Ground") {
             grounded = true;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Flag") {
+            manager.GetComponent<Manager>().Win();
         }
     }
 
