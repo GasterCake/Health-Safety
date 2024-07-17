@@ -1,0 +1,22 @@
+Cooking Game
+
+It is an a cooking rpg rogue like. The aspect of it being a cooking game is that you make food from limited options of cuisine in which you will earn money by successfully making the food. If not you will be penalized for food and safety concerns. The rpg aspect is that you combat living food in which when you kill them you get their corpse for later cooking. Weapon choces can vary as you unlock some from a kitchen knife, butter knife, mallet, fraying pan.
+
+Combat System: Spam like fight where the player can span their attack while the boss/ enemy does their varying moves 
+Enemy: Chunk Food that will break into a vegatble when you beat it 
+Burger 
+Pizza
+
+
+Idea of Getting Weapons:
+Do well in a hypothetical cooking minigame get a weapon
+
+
+Game Idea 1
+Flood Escape
+
+Game Idea 2
+Flappy Bird
+
+Game Idea 3
+Wave Deffense
