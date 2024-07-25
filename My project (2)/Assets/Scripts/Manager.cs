@@ -20,7 +20,7 @@ public class Manager : MonoBehaviour
     }
 
     public void Restart() {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("StartMenu");
     }
 
     public void Win() {
