@@ -5,12 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
-  - Flag
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Front
+  - 
   - Water
   - UI
   - 
@@ -42,7 +41,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Back
-    uniqueID: 3882757417
     locked: 0
