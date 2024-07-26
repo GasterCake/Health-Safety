@@ -5,12 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class Manager : MonoBehaviour
 {
-    public GameObject winScreen;
+    public GameObject WinScreen;
+    public bool BossRoom;
     // Start is called before the first frame update
     void Awake()
     {
-        winScreen.SetActive(false);
+        WinScreen.SetActive(false);
         Time.timeScale = 1;
+        BossRoom = false;
     }
 
     // Update is called once per frame
@@ -18,13 +20,13 @@ public class Manager : MonoBehaviour
     {
         
     }
-
-    public void Restart() {
-        SceneManager.LoadScene("StartMenu");
+    public void Restart()
+    {
+        SceneManager.LoadScene(1);
     }
-
-    public void Win() {
-        winScreen.SetActive(true);
+    public void Win()
+    {
+        WinScreen.SetActive(true);
         Time.timeScale = 0;
     }
 }

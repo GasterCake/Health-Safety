@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Ground
   - Flag
+  - BossRoom
+  - Damage
   layers:
   - Default
   - TransparentFX
